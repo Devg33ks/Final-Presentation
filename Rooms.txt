@@ -1,0 +1,10 @@
+234 N/A D
+345 N/A D
+456 N/A D
+567 Available D
+777 Available D
+332 Available D
+678 N/A K
+789 Available K
+890 Available K
+901 Available K
