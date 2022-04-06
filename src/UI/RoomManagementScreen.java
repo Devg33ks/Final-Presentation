@@ -127,13 +127,14 @@ public class RoomManagementScreen extends javax.swing.JFrame {
         roomlist.remove(rec);
         this.showTable(roomlist);
     }
-
+    //back button
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         mainScreen next = new mainScreen();
         next.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    //override room data
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         RoomOverides next= new RoomOverides();
         next.setVisible(true);
@@ -178,8 +179,8 @@ public class RoomManagementScreen extends javax.swing.JFrame {
     private ArrayList<String> roomlist;
     private javax.swing.table.DefaultTableModel model;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton1;//back button
+    private javax.swing.JButton jButton2;// override room data
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;

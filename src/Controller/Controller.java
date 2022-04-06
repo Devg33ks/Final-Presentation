@@ -176,7 +176,7 @@ public class Controller {
         employee.makePayment();
         employee.save();
         System.out.println(employee.getName());
-        employeeRecord = report.searchEmployee(employee.getName());
+        employeeRecord = report.searchEmployee(employee.getID());
         return employeeRecord;
     }
 

@@ -35,7 +35,7 @@ public class SearchScreen extends javax.swing.JFrame {
 
         jLabel1.setText("Search :");
 
-        jTextField1.setText("\"Enter Employees name\"");
+        jTextField1.setText("\"Enter Employees ID\"");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);

@@ -231,5 +231,85 @@ public class DatabaseManager {
             }
         }
     }
+   /* public static String changeroomstatustoavailable(String rfile, int roomNumber) throws IOException{
+
+        File f1=new File(rfile); //Creation of File Descriptor for input file
+        String[] words=null;  //Initialize the word Array
+        FileReader fr = new FileReader(f1);  //Creation of File Reader object
+        BufferedReader br = new BufferedReader(fr); //Creation of BufferedReader object
+        FileWriter writer = null;
+        String s;
+        String id;
+        String oldLine = "";
+        String newLine="";
+        int num;
+
+        // String input="Java]";   // Input word to be searched
+        int count=0;   //Intialize the word to zero
+        System.out.println(roomNumber);
+        if(roomNumber != 0){
+            try{
+                while((s=br.readLine()) !=null) //Reading Content from the file
+                {
+                    num = 0;
+                    //System.out.println(s);
+                    String line [] =s.split(" ");
+                    roomnum = Integer.parseInt(line[0]);
+
+                    if(roomNumber == roomnum){
+                        System.out.println(roomNumber);
+                        System.out.println(roomnum);
+                        System.out.println("hereee");
+                        count++;
+                        id = line[0];
+                        //System.out.println(id);
+                        //oldLine = oldLine + s + System.lineSeparator();
+                        if (s.contains("Closed") ) {
+                            newLine = s.replace("Closed", "Available");
+                        }else{
+                            newLine = s.replace("N/A", "Available");
+                        }
+                        oldLine = oldLine + newLine + System.lineSeparator();
+
+                        writer = new FileWriter(f1);
+                        writer.write(newLine);
+                    }else{
+                        oldLine = oldLine + s + System.lineSeparator();
+                        System.out.println(" deh yah hereee");
+                        writer = new FileWriter(f1);
+                        writer.write(oldLine);
+                        num++;
+                    }
+                }
+            } catch (IOException ex){
+                ErrorHandling er = new ErrorHandling("Save File not found","Invalid Entry");
+                er.setVisible(true);;
+            }
+            finally{
+                fr.close();
+                writer.close();
+            }
+            //System.out.println("Room "+ roomNumber+" closed for maintenance");
+            //System.out.println("Room number invalid");
+        }
+        else{
+            try{
+                while((s=br.readLine()) !=null) //Reading Content from the file
+                {
+                    ErrorHandling er = new ErrorHandling("Room of this type is not available ","");
+                    er.setVisible(true); }
+
+            } catch (IOException ex){
+                ErrorHandling er = new ErrorHandling("Save File not found","Invalid Entry");
+                er.setVisible(true);;
+            }
+            finally{
+                fr.close();
+                writer.close();
+            }
+        }
+        String oldroomNumber = Integer.toString(roomNumber);
+        return oldroomNumber;
+    }*/
 
 }

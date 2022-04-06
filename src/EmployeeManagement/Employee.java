@@ -141,8 +141,6 @@ public class Employee {
         DatabaseManager database= new DatabaseManager();
         database.addToDatabase(this.toString());
 
-
-        // create reprt and send name, balance, room type and room number as an array or string
     }
 
 }

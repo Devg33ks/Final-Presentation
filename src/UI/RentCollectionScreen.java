@@ -190,13 +190,13 @@ public class RentCollectionScreen extends javax.swing.JFrame {
         Controller con = new Controller();
         employeeRecord = con.rentCollection(name,roomType,roomNum, employeeRecord, newBalance);
         
-        name =employeeRecord.split(" ")[0] + " " + employeeRecord.split(" ")[1];
+        name =employeeRecord.split(" ")[1] + " " + employeeRecord.split(" ")[2];
         jLabel1.setText(name);
-        jLabel9.setText(employeeRecord.split(" ")[2]);
-        jLabel10.setText(employeeRecord.split(" ")[3]);
-        jLabel11.setText(employeeRecord.split(" ")[4]);
-        jLabel6.setText(employeeRecord.split(" ")[5]);
-        jLabel8.setText(employeeRecord.split(" ")[6]);
+        jLabel9.setText(employeeRecord.split(" ")[3]);
+        jLabel10.setText(employeeRecord.split(" ")[4]);
+        jLabel11.setText(employeeRecord.split(" ")[5]);
+        jLabel6.setText(employeeRecord.split(" ")[6]);
+        jLabel8.setText(employeeRecord.split(" ")[7]);
 
        }catch(NumberFormatException  e){
         ErrorHandling er = new ErrorHandling("Enter an amount as rent paid (numbers only)","Invalid Entry");
